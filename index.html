@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Antonio Gobernado's Landing Page</title>
+
+    <!-- 1) BOOTSTRAP CSS version 4  CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- 2) FONT AWESOME CDN version 5 http://fontawesome.com/get-started  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- 3) CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+
+
+
+  <body>
+    <!-- NAVIGATION -->
+
+    <!-- navbar-expand-sm cuando el tamaño de pantalla se ponga pequeño aparecera hamburguesa, color oscuro y fija -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <div class="container"><!-- espaciado hacia los lados y asi parczca el div centrado-->
+        <h2> Gober's Page</h2>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/icon.png" style="width: 10%;">
+
+        </a>
+
+        <!-- button only in mobiles #navbarNav es el id para el menu hamburguesa -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span><!-- en lugar de colocarle un texto le ponemos el menu con el dibujo de hamburguesa-->
+        </button>
+
+        <!-- el div con el id que se puso nateriormente en data-target-->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          
+          <ul class="navbar-nav ml-auto"><!-- se va todo a la parte de la derecha de la pantalla -->
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="#home-section">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+    <!-- HEADER -->
+    <header id="home-section" class="main-header">
+      <div class="background-overlay text-white py-5"> <!-- con overlay se oscurece padding de arriba de 5-->
+
+
+        <div class="container">
+          <div class="row d-flex h-100"> <!-- el div del tipo caja flexible al 100%-->
+
+            <!-- seccion de 1- 6 ponemos titulo y contenido-->
+            <div class="col-sm-6 text-center justify-content-center align-self-center">
+              <h1>
+                Desarrollo Web
+              </h1>
+              <p>Todo tipo de desarrollos para tu página web utilizando diversas tecnologías y lenguajes.</p>
+
+
+              <a href="#team" class="btn btn-outline-success btn-lg text-white"><!-- spaar que se vea en verde-->
+                Read More
+              </a>
+
+            </div>
+
+
+            <!-- seccion de 6-12 para la imagen -->
+            <div class="col-sm-6">
+                <!-- img-fluid -->
+              <img src="img/ordenador.png" style="width: 80%;" class="img-fluid d-sm-block">
+
+              <!-- show an element only on a given interval of screen sizes you can combine one .d-*-none class with a .d-*-* class, for example .d-none .d-md-block .d-xl-none will hide the element for all screen sizes except on medium and large devices.-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+
+
+    <!-- NEWSLETTER  -->
+    <section id="newsletter" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+
+          <!-- meto 3 grupos de columnas-->
+          <div class="col-md-4">
+            <input type="text" class="form-control form-control-lg" placeholder="Enter your Name">
+          </div>
+          <div class="col-md-4">
+            <input type="email" class="form-control form-control-lg" placeholder="Enter your Email">
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-outline-success btn-lg btn-block">
+              Suscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- FEATURES -->
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3>HTML</h3>
+                <p>
+                  Lenguaje de programación que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white bg-primary">
+              <div class="card-body">
+                <h3>BOOTSTRAP</h3>
+                <p>
+                  Es un framework CSS desarrollado inicialmente (en el año 2011) por Twitter que permite dar forma a un sitio web mediante librerías CSS que incluyen tipografías, botones, cuadros, menús y otros elementos que pueden ser utilizados en cualquier sitio web
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3>JAVASCRIPT</h3>
+                <p>
+                  Lenguaje de programación, al igual que PHP, si bien tiene diferencias importantes con éste. JavaScript se utiliza principalmente del lado del cliente (es decir, se ejecuta en nuestro ordenador, no en el servidor) permitiendo crear efectos atractivos y dinámicos en las páginas web 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white bg-primary">
+              <div class="card-body">
+                <h3>NODE JS</h3>
+                <p>
+                  Entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor (pero no limitándose a ello) basado en el lenguaje de programación ECMAScript, asíncrono, con I/O de datos en una arquitectura orientada a eventos y basado en el motor V8 de Google. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ABOUT -->
+    <section id="about" class="m5 text-center bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="m-5">
+            <h3>Why this Product?</h3>
+            <p>
+              Consectetur dolor at delectus dolores fugiat! Rerum inventore cumque quidem corporis iusto temporibus nesciunt minima! Harum harum qui dolores natus dolore repudiandae quae animi aliquid nobis sed? Quod culpa quia?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- ACCORDION -->
+    <section class="container text-center p-5">
+      <div class="row">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿Question One?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- PORTFOLIO -->
+    <section id="team" class="text-center team">
+      <div class="container p-5">
+        <h1 class="text-center text-white">Portfolio</h1>
+        <p class="text-white">
+          Puedes saber de mi, a traves de esta pagina.
+        </p>
+        <div class="row">
+
+
+          <!-- ANTONIO GOBERNADO-->
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/yo.jpg" style="width: 10%;" class="img-fluid rounded-circle w-50">
+                <h3>Antonio Gobernado Barrigón</h3>
+                <p>
+                  Soy Desarrollador WEB, utilizando diversas tecnologías entre las cuales se encuentra WORDPRESS, BOOTSTRAP y JAVASCRIPT......
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  <div class="p-4">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="p-4">
+                    <a href="https://www.youtube.com/channel/UCzwiesc5rxp5HH7TAJh647Q/featured?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- FORMULARIO CONTACT -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3>Contact</h3>
+            <p>
+              Consectetur neque numquam autem animi?
+            </p>
+            <form action="">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-user input-group-text"></i>
+                </div>
+                <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-envelope input-group-text"></i>
+                </div>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <i class="fas fa-pencil-alt input-group-text"></i>
+                </div>
+                <textarea name="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form>
+          </div>
+          <div class="col-lg-3 align-self-center">
+            <img src="img/sobre.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container p-3">
+        <div class="row text-center text-white">
+          <div class="col ml-auto">
+            <p>Copyright &copy; 2018</p>
+          </div>
+        </div>
+      </div>       
+    </footer>
+
+
+
+
+
+    <!-- BOOTSTRAP SCRIPTS CDN 3 SCRIPTS : JQUERY, POPPER, BOOTSTRAP JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
